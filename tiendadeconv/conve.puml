@@ -1,0 +1,48 @@
+@startuml
+annotation java.lang.Override
+annotation javax.persistence.Basic
+annotation javax.persistence.Column
+annotation javax.persistence.Embeddable
+annotation javax.persistence.EmbeddedId
+annotation javax.persistence.Entity
+annotation javax.persistence.Id
+annotation javax.persistence.NamedQueries
+annotation javax.persistence.NamedQuery
+annotation javax.persistence.Table
+annotation javax.persistence.Temporal
+class com.mycompany.tiendadeconv.Faccd
+class com.mycompany.tiendadeconv.FaccdPK
+class com.mycompany.tiendadeconv.Facce
+class com.mycompany.tiendadeconv.Tiendadeconv
+class java.math.BigDecimal
+class java.util.Date
+class javax.persistence.TemporalType
+interface java.io.Serializable
+com.mycompany.tiendadeconv.Faccd ..> java.lang.Override
+com.mycompany.tiendadeconv.Faccd ..> javax.persistence.Column
+com.mycompany.tiendadeconv.Faccd ..> javax.persistence.EmbeddedId
+com.mycompany.tiendadeconv.Faccd ..> javax.persistence.Entity
+com.mycompany.tiendadeconv.Faccd ..> javax.persistence.NamedQueries
+com.mycompany.tiendadeconv.Faccd ..> javax.persistence.NamedQuery
+com.mycompany.tiendadeconv.Faccd ..> javax.persistence.Table
+com.mycompany.tiendadeconv.Faccd ..> java.math.BigDecimal
+com.mycompany.tiendadeconv.Faccd --|> java.io.Serializable
+com.mycompany.tiendadeconv.FaccdPK ..> java.lang.Override
+com.mycompany.tiendadeconv.FaccdPK ..> javax.persistence.Basic
+com.mycompany.tiendadeconv.FaccdPK ..> javax.persistence.Column
+com.mycompany.tiendadeconv.FaccdPK ..> javax.persistence.Embeddable
+com.mycompany.tiendadeconv.FaccdPK --|> java.io.Serializable
+com.mycompany.tiendadeconv.Facce ..> java.lang.Override
+com.mycompany.tiendadeconv.Facce ..> javax.persistence.Basic
+com.mycompany.tiendadeconv.Facce ..> javax.persistence.Column
+com.mycompany.tiendadeconv.Facce ..> javax.persistence.Entity
+com.mycompany.tiendadeconv.Facce ..> javax.persistence.Id
+com.mycompany.tiendadeconv.Facce ..> javax.persistence.NamedQueries
+com.mycompany.tiendadeconv.Facce ..> javax.persistence.NamedQuery
+com.mycompany.tiendadeconv.Facce ..> javax.persistence.Table
+com.mycompany.tiendadeconv.Facce ..> javax.persistence.Temporal
+com.mycompany.tiendadeconv.Facce ..> java.math.BigDecimal
+com.mycompany.tiendadeconv.Facce ..> java.util.Date
+com.mycompany.tiendadeconv.Facce ..> javax.persistence.TemporalType
+com.mycompany.tiendadeconv.Facce --|> java.io.Serializable
+@enduml
